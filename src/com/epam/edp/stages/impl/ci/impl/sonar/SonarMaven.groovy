@@ -21,7 +21,7 @@ import com.epam.edp.stages.impl.ci.impl.sonarcleanup.SonarCleanup
 import com.epam.edp.tools.SonarScanner
 import org.apache.commons.lang.RandomStringUtils
 
-@Stage(name = "new-sonar", buildTool = "maven", type = [ProjectType.APPLICATION, ProjectType.AUTOTESTS, ProjectType.LIBRARY])
+@Stage(name = "sonar", buildTool = "maven", type = [ProjectType.APPLICATION, ProjectType.AUTOTESTS, ProjectType.LIBRARY])
 class SonarMaven {
     Script script
 

@@ -12,14 +12,17 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.*/
 
-package com.epam.edp.stages.impl.ci.impl.sonar
+// package com.epam.edp.stages.impl.ci.impl.sonar
 
+
+// import com.epam.edp.stages.impl.ci.ProjectType
+// import com.epam.edp.stages.impl.ci.Stage
+// import com.epam.edp.stages.impl.ci.impl.sonarcleanup.SonarCleanup
+// import com.epam.edp.tools.SonarScanner
+// import org.apache.commons.lang.RandomStringUtils
 
 import com.epam.edp.stages.impl.ci.ProjectType
 import com.epam.edp.stages.impl.ci.Stage
-import com.epam.edp.stages.impl.ci.impl.sonarcleanup.SonarCleanup
-import com.epam.edp.tools.SonarScanner
-import org.apache.commons.lang.RandomStringUtils
 
 @Stage(name = "sonar", buildTool = ["maven"], type = [ProjectType.APPLICATION, ProjectType.AUTOTESTS, ProjectType.LIBRARY])
 class CustomSonar {

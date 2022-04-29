@@ -31,4 +31,4 @@ class SonarMaven {
     }
 }
 
-return SonarMaven
+// return SonarMaven

@@ -12,7 +12,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.*/
 
-package com.epam.edp.stages.impl.ci.impl.sonar
+package com.epam.edp.stages.impl.ci.impl.custom
 
 
 import com.epam.edp.stages.impl.ci.ProjectType
@@ -29,7 +29,7 @@ class SonarMaven {
 
         script.sh "echo 'Your custom logic of the stage'"
 
-        
+
         def codereviewAnalysisRunDir = context.workDir
         if (context.job.type == "codereview") {
             codereviewAnalysisRunDir = new File("${context.workDir}/../${RandomStringUtils.random(10, true, true)}")

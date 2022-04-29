@@ -1,3 +1,5 @@
-@Library(['edp-library-stages', 'edp-library-pipelines']) _
+@Library(['my-custom-lib', 'edp-library-pipelines']) _
 
 Build()
+
+// edp-library-stages

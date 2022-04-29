@@ -31,4 +31,4 @@ class NewStage {
     }
 }
 
-// return SonarMaven
+return NewStage

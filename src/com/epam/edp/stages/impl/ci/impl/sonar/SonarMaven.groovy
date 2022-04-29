@@ -26,6 +26,9 @@ class SonarMaven {
     Script script
 
     void run(context) {
+
+        script.sh "echo 'Your custom logic of the stage'"
+
         def codereviewAnalysisRunDir = context.workDir
         if (context.job.type == "codereview") {
             codereviewAnalysisRunDir = new File("${context.workDir}/../${RandomStringUtils.random(10, true, true)}")

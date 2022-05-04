@@ -24,6 +24,6 @@ class Deploy {
 
     void run(context) {
 
-        script.sh "aws --version && helm version && jq --version && curl --version"
+        script.sh "echo 'Your custom logic of the stage'"
     }
 }
